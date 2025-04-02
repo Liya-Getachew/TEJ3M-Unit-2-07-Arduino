@@ -15,13 +15,14 @@
  
  Servo servoNumber1;
    
- float duration, distance;
+ float duration;
+ float distance;
  
  void setup() {
    pinMode(TRIG_PIN, OUTPUT);
    pinMode(ECHO_PIN, INPUT);
    Serial.begin(9600);
-   servoNumber1.attach(4);
+   servoNumber1.attach(6); 
    servoNumber1.write(0);
  }
  
